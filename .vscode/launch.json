@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python C++ Debugger",
+      "type": "pythoncpp",
+      "request": "launch",
+      "pythonLaunchName": "Python: Current File",
+      "cppAttachName": "'(Windows) Attach' or '(gdb) Attach'"
+    },
+    {
+      "name": "Python C++ Debugger",
+      "type": "pythoncpp",
+      "request": "launch",
+      "pythonConfig": "default",
+      "cppConfig": "default (gdb) Attach"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/workspaces/docker-Alpine",
+      "program": "/workspaces/docker-Alpine/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
